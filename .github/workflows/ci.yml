@@ -1,36 +1,23 @@
-# This is a basic workflow to help you get started with Actions
+# workflow的名称，会显示在工作流运行页面
+name: MainWorkflow
 
-name: CI
+# 工作流执行的契机：push表示每次push代码之后都会执行
+on: [push]
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  # build job 我们用来做持续构建
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        # 设置阿里云OSS的 id/secret，存储到 github 的 secrets 中
+    - name: setup aliyun oss
+      uses: manyuanrong/setup-ossutil@master
+      with:
+         # endpoint 可以去oss控制台上查看
+        endpoint: "oss-cn-beijing.aliyuncs.com"
+        # 使用我们之前配置在secrets里面的accesskeys来配置ossutil
+        access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+        access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+    - name: cp files to aliyun
+      run: ossutil cp src oss://iptttv/ -rf
+   
