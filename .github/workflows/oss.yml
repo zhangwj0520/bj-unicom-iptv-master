@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      # oss
+      - uses: actions/checkout@master
+      - uses: manyuanrong/setup-ossutil@v2.0
+        with:
+          # endpoint 可以去oss控制台上查看
+          endpoint: "oss-cn-beijing.aliyuncs.com"
+          # 使用我们之前配置在secrets里面的accesskeys来配置ossutil
+          access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+          sts-token: ""
+      - run: ossutil cp -rf src oss://iptttv/
