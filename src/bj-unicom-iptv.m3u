@@ -85,6 +85,15 @@ rtp://239.3.1.159:8000
 rtp://239.3.1.242:8000
 #EXTINF:-1 tvg-id="1875" tvg-name="BTV影视" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV影视.png" group-title="[高清]北京",BRTV影视[高清]
 rtp://239.3.1.158:8000
+#EXTINF:-1 tvg-id="1877"  tvg-name="BTRV体育休闲"  tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV体育.png" group-title="[高清]北京",BRTV体育休闲[高清]
+rtp://239.3.1.243:8000
+#EXTINF:-1 tvg-id="1872"  tvg-name="BRTV纪实科教"  tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV科教.png"  group-title="[高清]北京",BRTV纪实科教[高清]
+rtp://239.3.1.115:8000
+#EXTINF:-1 tvg-id="1876"  tvg-name="BRTV财经"  tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV财经.png"  group-title="[高清]北京",BRTV财经[高清]
+rtp://239.3.1.116:8000
+#EXTINF:-1  tvg-id="1878"  tvg-name="BRTV生活"  tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV生活.png"  group-title="[高清]北京",BRTV生活[高清]
+rtp://239.3.1.117:8000
+
 #EXTINF:-1 tvg-id="67" tvg-name="卡酷动画" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/kaku.png" group-title="[高清]北京;少儿",BRTV卡酷动画[高清]
 rtp://239.3.1.189:8000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="[高清]北京",朝阳电视台[高清]
@@ -96,6 +105,8 @@ rtp://239.3.1.96:8001
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="[高清]北京",通州融媒[高清]
 rtp://239.3.1.221:8001
 
+#EXTINF:-1 tvg-id="106" tvg-name="CCTV 4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="[高清]北京IPTV;4K",CCTV 4K[4K]
+rtp://239.3.1.245:2000
 #EXTINF:-1 tvg-id="7244" tvg-name="爱上4K" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/aishang4k.png" group-title="[高清]北京IPTV;4K",爱上4K[4K]
 rtp://239.3.1.236:2000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="[高清]北京IPTV;4K",北京IPTV 4K超清[4K]
@@ -142,7 +153,7 @@ rtp://239.3.1.181:8001
 rtp://239.3.1.182:8001
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="[高清]北京IPTV",家有购物[高清]
 rtp://239.3.1.185:8001
-#EXTINF:-1 tvg-id="7249" tvg-name="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="高清",家有购物[高清]
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="[高清]北京IPTV",BRTV体育休闲[高清]
 rtp://239.3.1.97:8001
 #EXTINF:-1 tvg-id="2025" tvg-name="金鹰纪实" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jinyingjishi.png" group-title="[高清]北京IPTV",金鹰纪实[高清]
 rtp://239.3.1.58:8156
